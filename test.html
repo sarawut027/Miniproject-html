@@ -79,7 +79,9 @@
        
         <div class="icon">
             <a href="#search">🔍</a>
-            <a href="#profile">👤</a>
+           <div class="icon">
+           <button onclick="openLogin()" class="login-btn">Login</button>
+</div>
         </div>
     </header>
     <!-- -------------------------------------------------------------------------------- -->
@@ -106,12 +108,9 @@
     </div>
 
     <div class="slides fade">
-    <div class="numbertext">2 / 4</div>
-    <video width="50%%" autoplay muted loop playsinline id="myVideo">
-       <source src="image/gtav1.mp4" type="video/mp4">
-        <source src="image/gtav1.mp4" type="video/webm">
-    </video>
-</div>
+        <div class="numbertext">2 / 4</div>
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/f4a6f63b4f7cb42262152449ba5e5c5837f20ff4/ss_f4a6f63b4f7cb42262152449ba5e5c5837f20ff4.1920x1080.jpg?t=1765479644" alt="Image 3">
+    </div>
 
    <div class="slides fade">
         <div class="numbertext">3 / 4</div>
@@ -168,4 +167,14 @@
         </div>
       </main>
 </body>
+<!-- LOGIN MODAL -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeLogin()">&times;</span>
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+  </div>
+</div>
 </html>

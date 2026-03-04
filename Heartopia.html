@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heartopia</title>
+    <link rel="stylesheet" href="css/infogame.css">
+    <link rel="icon" type="image/png" href="image/LOGO-removebg-preview.png">
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
+        body {
+          background: linear-gradient(135deg,rgba(253, 209, 216, 0.699),rgba(125, 163, 233, 0.815));
+        }
+    </style>
+    <!-- -------------------------------------------------------------------------------- -->
+    <header>
+        <a href="homepage.html"><img class="logo" src="image/LOGO-removebg-preview.png" alt="logo" width="100px"
+                height="100px"></a>
+        <div class="nav-menu">
+            <h2><a href="Pc.html">PC</a></h2>
+            <h2><a href="Playstation.html">Play Station</a></h2>
+            <h2><a href="xbox.html">Xbox</a></h2>
+        </div>
+
+        <div class="icon">
+            <form class="search-form" onsubmit="return handleSearch(event)">
+                <input type="text" id="searchInput" placeholder="Search games..." required>
+                <button type="submit">
+                    <span class="search-icon">🔍</span>
+                </button>
+            </form>
+            <a href="Profile.html" class="profile-icon">👤</a>
+        </div>
+    </header>
+    <!-- -------------------------------------------------------------------------------- -->
+    <!-- Baner -->
+    <div class="hero-baner">
+        <img src="https://theheartopia.com/images/hero-banner.webp"
+            alt="Hero-baner" height="400px" width="100%">
+    </div>
+    <!-- Main -->
+    <main>
+        <h2>Heartopia</h2>
+        <div class="description-box">
+            <h4>Heartopia</h4>
+            <div class="description">
+                <div class="description-info">
+                    <p>A charming life simulation sandbox game where players can build their dream homes, cultivate lush gardens, and bond with adorable companions. It offers a peaceful open-world experience focused on creativity, social interaction, and role-playing in a vibrant, stress-free environment.</p>
+                </div>
+                <!-- รูปภาพทำสไลด์Java -->
+                <div class="potoleft">
+
+                    <div class="slider-container">
+                        <div class="slides fade">
+                            <div class="numbertext">1 / 5</div>
+                            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4025700/6752380746cc6ca97c3b3af3512ede6847124eb1/ss_6752380746cc6ca97c3b3af3512ede6847124eb1.1920x1080.jpg?t=1770717088"
+                                alt="Image 1">
+                        </div>
+
+                        <div class="slides fade">
+                            <div class="numbertext">2 / 5</div>
+                            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4025700/5e40a2c5f9197466fb950aaa4d22e580bee2aa70/ss_5e40a2c5f9197466fb950aaa4d22e580bee2aa70.1920x1080.jpg?t=1770717088"
+                                alt="Image 2">
+                        </div>
+
+                        <div class="slides fade">
+                            <div class="numbertext">3 / 5</div>
+                            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4025700/786d2e2ab0a9eabe1678ef1da731579ad136d674/ss_786d2e2ab0a9eabe1678ef1da731579ad136d674.1920x1080.jpg?t=1770717088"
+                                alt="Image 3">
+                        </div>
+                        <div class="slides fade">
+                            <div class="numbertext">4 / 5</div>
+                            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4025700/deaf3082420b41090bdaaae3034a872b3359ad61/ss_deaf3082420b41090bdaaae3034a872b3359ad61.1920x1080.jpg?t=1770717088"
+                                alt="Image 4">
+                        </div>
+                        <div class="slides fade">
+                            <div class="numbertext">5 / 5</div>
+                            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4025700/971b17a8d739588611eb6cbde0de029b4c722b01/ss_971b17a8d739588611eb6cbde0de029b4c722b01.1920x1080.jpg?t=1770717088"
+                                alt="Image 5">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+                <!----------------------------------------------------------------------------------- -->
+            </div>
+        </div>
+        <!-- ----------------------------------------------------------------------------------------------- -->
+        <div class="button-group">
+            <div class="btn">
+                <img src="image/steam-bt.png" alt="steam">
+                <a href="https://store.steampowered.com/app/4025700/Heartopia/">STEAM</a>
+            </div>
+            <div class="btn-trailer">
+                <img src="image/youtube-bt.png" alt="Trailer">
+                <a href="https://www.youtube.com/watch?v=21Ql_ViAzjE">Trailer!</a>
+            </div>
+
+        </div>
+        <!-- สเปค -->
+        <section class="system-req">
+
+            <h2 class="req-title">System Requirements</h2>
+            <div class="req-grid">
+                <div class="req-box">
+                    <h3>MINIMUM:</h3>
+                    <p><strong>OS:</strong> Windows 10 (latest service pack)</p>
+                    <p><strong>PROCESSOR:</strong> Intel® Core™ i7-4770 | AMD FX™-9590</p>
+                    <p><strong>MEMORY:</strong> 8 GB RAM</p>
+                    <p><strong>GRAPHICS:</strong> NVIDIA GeForce® GTX 1630 (4GB VRAM) | AMD Radeon™ RX 6400 (4GB VRAM)</p>
+                    <p><strong>DIRECTX:</strong> DirectX 10 Compatible</p>
+                    <p><strong>STORAGE:</strong> 105 GB available space</p>
+                </div>
+
+                <div class="req-box">
+                    <h3>RECOMMENDED:</h3>
+                    <p><strong>OS:</strong> Windows 11</p>
+                    <p><strong>PROCESSOR:</strong> Intel® Core™ i5-9600K | AMD Ryzen™ 5 3600</p>
+                    <p><strong>MEMORY:</strong> 16 GB RAM</p>
+                    <p><strong>GRAPHICS:</strong> NVIDIA GeForce® RTX 3060 (8GB VRAM) | AMD Radeon™ RX 6600XT (8GB VRAM)</p>
+                    <p><strong>DIRECTX:</strong> DirectX 10 Compatible</p>
+                    <p><strong>STORAGE:</strong> 105 GB available space</p>
+                </div>
+
+            </div>
+            <!-- ------------------------------------------ -->
+        </section>
+
+    </main>
+    <script src="java/pic.js"></script>
+</body>
+
+</html>

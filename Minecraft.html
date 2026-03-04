@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft</title>
+    <link rel="stylesheet" href="css/infogame.css">
+    <link rel="icon" type="image/png" href="image/LOGO-removebg-preview.png">
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
+    </style>
+    <!-- -------------------------------------------------------------------------------- -->
+    <header>
+        <a href="homepage.html"><img class="logo" src="image/LOGO-removebg-preview.png" alt="logo" width="100px"
+                height="100px"></a>
+        <div class="nav-menu">
+            <h2><a href="Pc.html">PC</a></h2>
+            <h2><a href="Playstation.html">Play Station</a></h2>
+            <h2><a href="xbox.html">Xbox</a></h2>
+        </div>
+
+        <div class="icon">
+            <form class="search-form" onsubmit="return handleSearch(event)">
+                <input type="text" id="searchInput" placeholder="Search games..." required>
+                <button type="submit">
+                    <span class="search-icon">🔍</span>
+                </button>
+            </form>
+            <a href="Profile.html" class="profile-icon">👤</a>
+        </div>
+    </header>
+    <!-- -------------------------------------------------------------------------------- -->
+    <!-- Baner -->
+    <div class="hero-baner">
+        <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/02/minecraft-key-art-feature.jpg"
+            alt="Hero-baner" height="400px" width="100%">
+    </div>
+    <!-- Main -->
+    <main>
+        <h2>Minecraft</h2>
+        <div class="description-box">
+            <h4>Minecraft</h4>
+            <div class="description">
+                <div class="description-info">
+                    <p>A limitless sandbox game where players explore a procedurally generated world made of blocks. You
+                        can gather resources to survive against monsters or use infinite materials to build anything
+                        your imagination allows.</p>
+                </div>
+                <!-- รูปภาพทำสไลด์Java -->
+                <div class="potoleft">
+
+                    <div class="slider-container">
+                        <div class="slides fade">
+                            <div class="numbertext">1 / 5</div>
+                            <img src="https://gmedia.playstation.com/is/image/SIEPDC/minecraft-screenshot-03-ps4-05dec19-en?$1600px$"
+                                alt="Image 1">
+                        </div>
+
+                        <div class="slides fade">
+                            <div class="numbertext">2 / 5</div>
+                            <img src="https://gmedia.playstation.com/is/image/SIEPDC/minecraft-screenshot-05-ps4-05dec19-en?$1600px$"
+                                alt="Image 2">
+                        </div>
+
+                        <div class="slides fade">
+                            <div class="numbertext">3 / 5</div>
+                            <img src="https://gmedia.playstation.com/is/image/SIEPDC/minecraft-screenshot-01-ps4-05dec19-en?$1600px$"
+                                alt="Image 3">
+                        </div>
+                        <div class="slides fade">
+                            <div class="numbertext">4 / 5</div>
+                            <img src="https://gmedia.playstation.com/is/image/SIEPDC/minecraft-screenshot-05-ps4-05dec19-en?$1600px$"
+                                alt="Image 4">
+                        </div>
+                        <div class="slides fade">
+                            <div class="numbertext">5 / 5</div>
+                            <img src="https://gmedia.playstation.com/is/image/SIEPDC/minecraft-screenshot-03-ps4-05dec19-en?$1600px$"
+                                alt="Image 5">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+                <!----------------------------------------------------------------------------------- -->
+            </div>
+        </div>
+        <!-- ----------------------------------------------------------------------------------------------- -->
+        <div class="button-group">
+            <div class="btn">
+                <img src="image/xbox-bt.png" alt="Xbox">
+                <a href="https://www.xbox.com/th-TH/games/store/minecraft/9MVXMVT8ZKWC">xbox</a>
+            </div>
+            <div class="btn">
+                <img src="image/play-bt.png" alt="play-station">
+                <a href="https://www.playstation.com/th-th/games/minecraft/">PLAY-STATION</a>
+            </div>
+            <div class="btn-trailer">
+                <img src="image/youtube-bt.png" alt="Trailer">
+                <a href="https://www.youtube.com/watch?v=MmB9b5njVbA">Trailer!</a>
+            </div>
+
+        </div>
+        <!-- สเปค -->
+        <section class="system-req">
+
+            <h2 class="req-title">System Requirements</h2>
+            <div class="req-grid">
+                <div class="req-box">
+                    <h3>MINIMUM:</h3>
+                    <p><strong>OS:</strong> Windows 7 or newer (64-bit recommended)</p>
+                    <p><strong>PROCESSOR:</strong> Intel Core i3-3210 / AMD A8-7600</p>
+                    <p><strong>MEMORY:</strong> 4 GB</p>
+                    <p><strong>GRAPHICS:</strong> Nvidia GeForce 400 Series / AMD Radeon HD 7000 series</p>
+                    <p><strong>DIRECTX:</strong> Version 11</p>
+                    <p><strong>STORAGE:</strong>4 GB (SSD recommended)</p>
+                </div>
+
+                <div class="req-box">
+                    <h3>RECOMMENDED:</h3>
+                    <p><strong>OS:</strong> Windows 11 64bit</p>
+                    <p><strong>PROCESSOR:</strong> Ryzen 7 3700X / i7-6700K</p>
+                    <p><strong>MEMORY:</strong> 16 GB RAM</p>
+                    <p><strong>GRAPHICS:</strong> RX 6600XT / RTX 3060</p>
+                    <p><strong>DIRECTX:</strong> Version 12</p>
+                    <p><strong>STORAGE:</strong> 45 GB (SSD Required)</p>
+                </div>
+
+            </div>
+            <!-- ------------------------------------------ -->
+        </section>
+
+    </main>
+    <script src="java/pic.js"></script>
+</body>
+
+</html>
