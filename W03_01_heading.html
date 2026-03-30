@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heading Workshop</title>
+    <style>
+        body{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+            background-color: rgb(144, 171, 139);
+        }
+        .container {
+            max-width:1000px;
+            margin: 20px auto;
+        }
+        .main {
+            color: rgb(59, 73, 83);
+            text-align: center;
+        }
+        .subtitle {
+            text-align: center;
+            color:#ffffff;
+        }
+        .card {
+            background-color: #EBF4DD;
+            padding: 20px 40px ;
+            border-radius: 15px;
+            border-top:4px solid #5A7863;
+            box-shadow: 0 4px 8px #5A7863;
+            margin-bottom: 55px;
+        }
+        .note{
+            border-left:4px solid #3B4953;
+            padding-left: 7px;
+            color: #3B4953;
+        }
+        pre {border-left:2px solid #3B4953 ;
+        padding-left: 7px;
+        background-color: #EEEEEE;
+        border-radius: 15px;
+        }
+        a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #3B4953;
+        }
+        footer{
+            color: #3B4953;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="main">Workshop: HTML Heading</h1>
+        <p class="subtitle">ฝึกใช้แท็ก &lt;h1&gt; – &lt;h6&gt; และการปรับขนาดหัวข้อด้วย CSS</p>
+    
+    <!-- Section1 -->
+    <section class="card">
+        <h2>1. ความหมายของ Headings (H1–H6) เป็น หัวข้อรองของหน้าเว็บ</h2>
+        <p>HTML มีหัวข้อทั้งหมด 6 ระดับ</p>
+    
+        <ul>
+        <li>H1 – หัวข้อใหญ่สุด ใช้สำหรับชื่อหน้าเว็บหรือหัวข้อหลัก</li>
+        <li>H2 – หัวข้อรอง แบ่ง Section ของเนื้อหา</li>
+        <li>H3 – หัวข้อย่อยภายใน H2</li>
+        <li>H4 – ย่อยลงไปอีกระดับ</li>
+        <li>H5 – ใช้น้อย แต่เน้นลำดับข้อมูล</li>
+        <li>H6 – เล็กสุด ใช้กับหัวข้อระดับลึก</li>
+        </ul>
+    <p class="note">💡 เช่น H1 ควรมีเพียง 1 อันในแต่ละหน้า เพื่อช่วย SEO และโครงสร้างเอกสาร</p>
+    </section>
+    
+
+    <!-- Section2 -->
+    <section class="card">
+        <h2>2. ตัวอย่างการใช ้H1–H6</h2>
+        <p>HTML มีหัวข้อทั้งหมด 6 ระดับ</p>
+    
+<pre>&lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+&lt;h2&gt;HTML Basics&lt;/h2&gt;
+&lt;h3&gt;What is HTML?&lt;/h3&gt;
+&lt;h4&gt;HTML Syntax&lt;/h4&gt;
+&lt;h5&gt;Example Code&lt;/h5&gt;
+&lt;h6&gt;Note: Case Sensitive&lt;/h6&gt;</pre>
+
+    <h1>H1: Welcome to My Website</h1>
+    <h2>H2: HTML Basics</h2>
+    <h3>H3: What is HTML?</h3>
+    <h4>H4: HTML Syntax</h4>
+    <h5>H5: Example Code</h5>
+    <h6>H6: Note about heading size</h6>
+    </section>
+    
+
+    <!-- Section3 -->
+    <section class="card">
+        ถ้าอยากให้หัวข้อ “ใหญ่กว่า” หรือ “เล็กกว่า” ขนาดเดิม? 
+        ใช้ CSS แทนการเลือก h1–h6 ผิดลำดับ เช่น:
+    
+<pre>h3 {
+    font-size: 40px; /* ทำให้ H3 ใหญ่เท่า H1 ได้ */
+    color: #c4005a;
+}
+    h5 {
+font-size: 12px; /* ทำให้ H5 เล็กลงอีก */
+}</pre>
+
+    <p>หรือสามารถกำหนดเฉพาะบางหัวข้อได้:</p>
+
+<pre>&lt;h3&gt; style="font-size: 50px; color: blue;">Big Custom Heading&lt;/h3&gt;</pre>
+
+    <p class="note">💡❗ จำไว้ว่า ลำดับหัวข้อควรเป็น H1 → H2 → H3 ตามโครงสร้างเนื้อหา ไม่ควรใช้ H5 เพื่อให้ “ตัวเล็กลง” หรือใช้ H1 เพื่อให้ “ตัวใหญ่ขึ้น” → ต้องแก้ด้วย CSS เท่านั้น</p>
+    </section>
+
+    <a href="index.html">&larr; Back to HTML Tutorial</a>
+    <footer>
+    <p>&copy; 2025 HTML Tutorial by Sarawut Auiyahan </p> 
+</footer>
+    </div>
+
+</body>
+</html>
+
+<!-- Sarawut Auiyahan 674230027 67/44 -->

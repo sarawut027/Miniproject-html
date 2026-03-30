@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="เว็ปไซด์แนะนำสถานที่ท่องเที่ยวในจังหวัด พร้อมข้อมูลและภาพประกอบที่น่าสนใจ" />
+    <title>Responsive Web Test Sarawut</title>
+
+    <!-- ให้ นศ. เพิ่มลิงค์ Google Fonts เอง 1 font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- ตรวจสอบส่วน head ให้ดีว่ามีอะไรขาดหายไปอีกบ้าง ถ้ามีก็ใส่ให้ครบ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- เขียน style sheet เพิ่มเติมให้ใกล้เคียงกับตัวอย่าง -->
+    <style>
+        /* ========== Reset เบื้องต้น ========== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Prompt", Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f7fb;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        header {
+            background-color: white;
+            padding: 16px 0;
+            top: 0;
+            z-index: 1000;
+            position: sticky;
+
+        }
+
+        .headercontainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        /* .main-nav {
+
+        } */
+
+        .nav-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .nav-list li {
+            list-style-type: none;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        .nav-list li:hover {
+
+            background-color: #93a9e3;
+
+            cursor: pointer;
+
+        }
+
+        .nav-list li a:hover {
+            color: white;
+        }
+
+        .brand {
+            color: brown;
+        }
+
+        /* ========== ใช้รวม ๆ ========== */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #1f3c88;
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+
+        h3 {
+            color: #1f3c88;
+            margin-bottom: 10px;
+        }
+
+        /* ========== Header ========== */
+        .nav-list a {
+            color: #333;
+            font-weight: 500;
+            padding: 8px 12px;
+            transition: 0.3s;
+        }
+
+
+        /* ========== Hero ========== */
+        .hero {
+            padding: 70px 0;
+            background: linear-gradient(to right, #cbe6ca, #f9fbff);
+
+        }
+
+        .card-hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .info-hero {
+            color: #333;
+        }
+
+        .info-hero h2 {
+            color: brown;
+        }
+
+        .hero-img {
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: cornflowerblue;
+            margin-top: 32px;
+            border-radius: 8px;
+
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            background-color: lightslategray;
+        }
+
+        /* ---------------------------------------------------------------- */
+        /* Article */
+        section {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        .article-header {
+            text-align: center;
+        }
+
+        .article {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 16px;
+        }
+
+        /* Card */
+        .card {
+            padding: 16px;
+            background-color: white;
+            border-radius: 16px;
+            transition: all 0.3s ease;
+
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 8px;
+            margin-top: 8px;
+            box-shadow:2px 2px 4px #33333353;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: fit-content;
+            height: 100%;
+            border-radius: 8px;
+        }
+
+        .article-info {
+            color: #333;
+
+        }
+
+        .article-info h3 {
+            color: #1f3c88;
+        }
+
+        .btn-secondary {
+            padding: 8px 16px;
+            background-color: orange;
+            margin-top: 32px;
+            display: inline-block;
+            color: white;
+
+            border-radius: 8px;
+            transition: all 0.3s ease;
+
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-3px);
+            background-color: lightslategray;
+        }
+
+        /* -------------------------------------------------------------------------------- */
+        /* Footer */
+        .footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: rgb(175, 0, 175);
+            padding: 16px 0;
+            color: white;
+        }
+
+        /* =====เขียน style sheet เพิ่มเติม เพื่อให้รองรับการ responsive ด้านล่าง ========== */
+
+        /* ========== โดยทุกอย่างต้องแสดงเป็น 1 คอลัมน์ เหมือนตัวอย่าง ========== */
+
+        @media (max-width: 768px) {
+            .headercontainer {
+                /* flex-wrap: wrap; */
+                text-align: center;
+                flex-direction: column;
+
+            }
+
+            .nav-list {
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .card-hero {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .article {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .footer {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .footer-span {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="headercontainer">
+                <h1 class="brand">เที่ยวเมืองน่าไป ประเทศไทย</h1>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="#">หน้าแรก</a></li>
+                        <li><a href="#article">สถานที่ท่องเที่ยว</a></li>
+                        <li><a href="#contact">ติดต่อ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <div class="hero">
+            <section>
+                <div class="container">
+                    <div class="card-hero">
+                        <div class="info-hero">
+                            <p>จังหวัดท่องเที่ยวแนะนำ</p>
+                            <h2>ค้นพบเสน่ห์ของเมืองท่องเที่ยวที่คุณไม่ควรพลาด</h2>
+                            <p>สัมผัสธรรมชาติ วัฒนธรรม และอาหารท้องถิ่นที่น่าสนใจ
+                                พร้อมสถานที่ยอดนิยมที่เหมาะสำหรับการพักผ่อนในวันหยุด</p>
+                            <a href="#" class="btn-primary">อ่านเพิ่มเติม</a>
+                        </div>
+                        <div class="hero-img">
+                            <img src="https://s359.kapook.com/r/600/auto/pagebuilder/08538489-ab97-46f8-9fea-fbc9c9e249ad.jpg"
+                                alt="ภาพสถานที่ท่องเที่ยว" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Places Section - สถานที่ท่องเที่ยวแนะนำ -->
+        <section id="article">
+            <div class="article-header">
+                <h2>สถานที่ท่องเที่ยวแนะนำ</h2>
+                <p>ตัวอย่างสถานที่ท่องเที่ยวที่น่าสนใจในจังหวัด</p>
+            </div>
+
+            <div class="article">
+                <!-- ภูชี้ฟ้า -->
+                <article class="card">
+                    <img src="https://png.pngtree.com/thumb_back/fh260/background/20220227/pngtree-at-sunset-thailands-phu-chi-fa-forest-park-photo-image_23906634.jpg"
+                        alt="ภูชี้ฟ้า" />
+                    <div class="article-info">
+                        <h3>ภูชี้ฟ้า</h3>
+                        <p>
+                            ที่สุดของความสวยงามทางภาคเหนือ คือหน้าผาสูงชันที่มีลักษณะเป็นปลายยอดแหลมชี้ขึ้นไปบนฟ้า
+                        </p>
+                        <a href="#" class="btn-secondary">อ่านเพิ่มเติม</a>
+                    </div>
+                </article>
+                <!-- เขื่อนเชี่ยวหลาน -->
+                <article class="card">
+                    <img src="https://img.kapook.com/u/2017/Tanapol/travel/ratchutphapa/k8.jpg"
+                        alt="เขื่อนเชี่ยวหลาน" />
+                    <div class="article-info">
+                        <h3>เขื่อนเชี่ยวหลาน</h3>
+                        <p>
+                            "กุ้ยหลินเมืองไทย" ที่มีภูเขาหินปูนตั้งตระหง่านกลางน้ำสีมรกต
+                            และป่าดิบชื้นที่เก่าแก่ที่สุดแห่งหนึ่งของโลก
+                        </p>
+                        <a href="#" class="btn-secondary">อ่านเพิ่มเติม</a>
+                    </div>
+                </article>
+                <!-- บ้านรักไทย -->
+                <article class="card">
+                    <img src="https://palanla.com/ckeditor/upload/files/id37/domestic_location/Ban%20Rak%20Thai/012.jpg"
+                        alt="เขื่อนเชี่ยวหลาน" />
+                    <div class="article-info">
+                        <h3>บ้านรักไทย</h3>
+                        <p>
+                            หมู่บ้านนี้ล้อมรอบด้วยไร่ชาสีเขียวขจีที่ปลูกลดหลั่นตามเนินเขา
+                            คุณสามารถเดินถ่ายรูปหรือลองเก็บใบชาสดๆ ได้
+                        </p>
+                        <a href="#" class="btn-secondary">อ่านเพิ่มเติม</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container footer">
+            <p>©2026 เที่ยวเมืองน่าไป สราวุฒิ อุยยาหาญ. All Rights Reserved.</p>
+            <div class="footer-span">
+                <span>Email: 674230027</span>
+                <span>Facebook: เที่ยวเมืองน่าไป ประเทศไทย</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

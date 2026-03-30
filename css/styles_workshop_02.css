@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap');
+/* -----------------------------------------------------------------------------------*/
+/* Body */
+body {
+    font-family: "Prompt", sans-serif;
+    background-color: lightgray;
+    line-height: 1.5;
+    max-width: 100%;
+}
+/* -----------------------------------------------------------------------------------*/
+/* Header */
+header {
+    background: linear-gradient(135deg , rgb(79, 79, 255) , rgb(139, 139, 255));
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.534);
+    
+}
+.div-head {
+    margin: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    align-items: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+.logo {
+    border-radius: 5px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.534);
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+
+}
+.div-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+li {
+    margin-left: 15px;
+    transition: transform 0.3s ease;
+}
+li:hover {
+transform: scale(1.2);
+}
+ul li a {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+    text-decoration: none;
+}
+ul li a:hover {
+    color: white;
+}
+.register {
+    padding: 8px 16px;
+    background-color: #BD8284;
+    border-radius: 8px;
+
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
+}
+.register:hover {
+    transform: scale(1.2);
+    color: #BD8284;
+    background-color: rgba(194, 194, 194, 0.637);
+}
+/* -----------------------------------------------------------------------------------*/
+/* Container */
+.container {
+    margin: 20px auto;
+    width: 1000px;
+    max-width: 100%;
+    display: flex;
+    
+}
+.pet {
+    background-color: white;
+    border-radius: 8px;
+    margin: 20px;
+    width: 400px;
+    height: 550px;
+    padding: 20px;
+    
+}
+.card {
+ /* background-color: #BD8284; */
+}
+.img-mypet {
+    border-radius: 8px;
+    object-fit: cover;
+}
+h3 {
+    color: rgb(32, 32, 32);
+    font-size: 1.5rem;
+
+}
+.info {
+    font-size: 1rem;
+    color: rgb(129, 129, 129);
+    margin-bottom: 20px;
+}
+.readmore{
+    font-weight: 600;
+    transition: transform 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: rgba(185, 185, 185, 0.445);
+     color: #5981d8;
+     text-decoration: none;
+}
+.readmore:hover {
+    color: #8f534d;
+    transform: scale(1.2);
+    
+}
+
+/* -----------------------------------------------------------------------------------*/
+/* Footer */
+footer {
+  text-align: center;
+ 
+  background: linear-gradient(100deg, #8f534d, #9b7863);
+  display: block;
+  width: fit-content;
+  justify-content: center;
+  margin: auto;
+  padding: 8px 16px;
+  border-radius: 15px;
+}
+.p-footer {
+    color: white;
+}

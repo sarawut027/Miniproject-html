@@ -1,0 +1,823 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap');
+
+/* body */
+body {
+    font-family: "Prompt", sans-serif;
+    background-color: lightgray;
+}
+
+.wrapper {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(101, 101, 255);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+.site-header {
+    background-color: white;
+
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 15px 0;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.site-subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+    color: gray;
+}
+
+.social-icons a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: gray;
+
+    border: 2px solid gray;
+    border-radius: 50%;
+
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: white;
+    background-color: cornflowerblue;
+    border: 2px solid cornflowerblue;
+    transform: translateY(-5px);
+}
+
+/* Navbar */
+.main-nav {
+    background-color: cornflowerblue;
+    flex-wrap: wrap;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: start;
+    list-style-type: none;
+    flex-wrap: wrap;
+
+}
+
+.nav-menu li a {
+    color: white;
+    font-size: 0.9rem;
+
+    display: block;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a:active {
+    background-color: rgb(82, 82, 255);
+    transform: scale(1.1);
+    font-weight: 600;
+
+}
+
+/* -------------------------------------------------------------------------------- */
+/* Hero Section */
+.hero-title {
+    text-align: center;
+    margin: 5px 0;
+
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 2px 4px gray;
+}
+
+.hero-content {
+    background-color: rgb(131, 116, 116);
+    padding: 20px 10px;
+    box-shadow: 0 4px 5px gray;
+    margin-bottom: 20px;
+}
+
+.hero-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, minmax(350px, 1fr));
+
+
+    /*
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    */
+}
+
+.hero-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    backdrop-filter: blur(10px);
+    /* เพิ่มความเบลอพื้นหลังด้านหลังไอเท็ม */
+
+
+    transition: all 0.3s ease;
+
+    /*overflow: hidden; /* ซ่อนส่วนที่เกินขอบเขตของกล่อง */
+}
+
+.hero-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    background: white;
+}
+
+.hero-item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.hero-item p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.hero-item .read-more {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #1e8bc3;
+
+    display: inline-block;
+}
+
+.hero-item .read-more:hover {
+    color: #764ba2;
+    text-decoration: none;
+}
+
+.hero-item .read-more::after {
+    content: '→';
+    margin-left: 5px;
+
+    transition: margin-left 0.3s ease;
+}
+
+.hero-item .read-more:hover::after {
+    margin-left: 10px;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* Page Section */
+.page {
+    background-color: lightgray;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 0.9fr;
+    gap: 20px;
+}
+
+.post-headline {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 10px;
+
+    text-transform: uppercase;
+
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date-circle {
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 0.8rem;
+}
+
+.day {
+    font-weight: 650;
+    font-size: 1.2rem;
+}
+
+/* -------------------------------------------------------------------- */
+/* Left Side */
+.post-list {
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+
+    padding: 20px;
+}
+
+.card+.card {
+    margin-top: 30px;
+}
+
+.post-description {
+    font-size: 0.82rem;
+    color: #666;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.post-footer {
+    font-size: 0.68rem;
+    color: #666;
+    padding-top: 10px;
+
+    border-top: #eee solid 1px;
+    display: flex;
+    gap: 2px;
+}
+
+/* css for Card 1 = Image */
+.post-image {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 8px 0;
+}
+
+.post-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Rigt Side */
+.widget {
+    background-color: white;
+    border-radius: 8px;
+
+    padding: 15px;
+
+}
+
+.widget+.widget {
+    margin-top: 20px;
+}
+
+/* -------------------------------------------------------------------- */
+/* css for card 2 = table */
+/* .comparison-tb {
+    border: 1px solid #333;
+    border-collapse: collapse ;
+    text-align: start;
+}
+.comparison-tb th,
+.comparison-tb td{
+    border: 1px solid #333;
+}
+.comparison-tb thead {
+    background-color: cornflowerblue;
+}  */
+.comparison-tb {
+    box-shadow: 0 2px 8px #3333338b;
+}
+
+.comparison-tb th {
+    background: linear-gradient(45deg, #FF9B2F, #ff9a2f81);
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.comparison-tb tr:nth-child(even) td {
+    background-color: #66666623;
+}
+
+.comparison-tb tr:hover td {
+    background-color: #66666684;
+    transform: translateY(-5px);
+}
+
+.comparison-tb td {
+    background-color: #c0c0c023;
+    padding: 8px;
+    transition: transform 0.2s ease;
+}
+
+.feature {
+    color: #444;
+    font-weight: 550;
+    font-size: 0.9rem;
+}
+
+.text-green {
+    color: green;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.text-red {
+    color: red;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.text-gray {
+    color: gray;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* ------------------------------------------------- */
+/* set style form : Left Side */
+/* ------------------------------------------------- */
+.contact-form-main-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #eee;
+    box-shadow: 0 2px 8px #3333338b;
+    margin-top: 10px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    font-weight: 550;
+    font-size: 0.9rem;
+    color: #333;
+
+    margin-bottom: 4px;
+}
+
+.form-input,
+.form-select,
+.form-text-area {
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 12px 8px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.contact-form-main-card .form-input,
+.contact-form-main-card .form-select,
+.contact-form-main-card .form-text-area {
+    background-color: #eee;
+    color: #333;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-text-area:focus {
+    outline: none;
+    border-color: #FF9B2F;
+    background-color: #fff;
+    box-shadow: 0 2px 8px #3333338b;
+    transform: translateY(-2px);
+}
+
+.form-text-area {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-checkbox-group {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    font-size: 0.9rem;
+    color: rgb(72, 106, 168);
+    font-weight: 550;
+}
+
+.checkbox-item input[type="checkbox"] {
+    accent-color: cornflowerblue;
+    transform: scale(1.5);
+}
+
+.btn-group {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+}
+
+.form-button {
+    /* background-color: cornflowerblue; */
+
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
+
+}
+
+.form-button:hover {
+    color: #eee;
+    background: linear-gradient(45deg, #222222, #44444481);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px #3333338b;
+}
+
+.submit-btn {
+    background: linear-gradient(45deg, #2f78ff, #2fb6ff81);
+}
+
+.reset-btn {
+    background: linear-gradient(45deg, #ff2f2f, #ff2f2f81);
+}
+
+/* ------------------------------------------------- */
+/* set style form : Right Side */
+/* ------------------------------------------------- */
+
+/* Widget01 */
+.widget-title {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.auther-photo {
+    background-color: lightgray;
+    border-radius: 8px;
+    padding: 50px 0;
+    text-align: center;
+
+    /* 
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.btn-facebook {
+    background: linear-gradient(45deg, #2f78ff, #0055ff81);
+    color: white;
+    padding: 8px 4px;
+    border-radius: 8px;
+    margin-top: 4px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+
+    transition: tranform 0.3s ease;
+}
+
+.btn-facebook:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+/* Widget02 */
+.widget-input {
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.widget-input label {
+    display: block;
+    font-weight: 550;
+    font-size: 0.9rem;
+    color: #333;
+
+    margin-bottom: 4px;
+}
+
+.widget-input input,
+.widget-input select {
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 12px 8px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.widget-input input:focus,
+.widget-input select:focus {
+    outline: none;
+    border-color: #FF9B2F;
+    background-color: #fff;
+    box-shadow: 0 2px 8px #3333338b;
+    transform: translateY(-2px);
+}
+
+.widget-button {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+}
+
+.widget-button {
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    padding: 12px 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.widget-button:hover {
+    color: #eee;
+    background: linear-gradient(45deg, #222222, #44444481);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px #3333338b;
+}
+
+.widget-02 {
+    background-color: #009632;
+    background: linear-gradient(45deg, #009632, #00963281);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.widget-02 .widget-input label {
+    color: #fff;
+}
+
+/* Widget03 */
+.widget-03 {
+    background-color: #5c0096;
+    background: linear-gradient(180deg, #5c0096, #5c009681);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.widget-03 label {
+    color: #fff;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* ตารางราคาทอง */
+/* ------------------------------------------------------------------------------ */
+:root {
+    --bg01: lightgray;
+    --bg02: rgba(255, 166, 0, 0.269);
+    --bg03: rgba(252, 198, 98, 0.625);
+    --line: #222222;
+
+    --green-text:#009632;
+    --red-text:red; 
+}
+.gold-table {
+    border: 1px solid var(--line);
+    border-collapse: collapse;
+    width: 100%;
+    
+    
+}
+
+.gold-table th,
+.gold-table td {
+    border: 1px solid var(--line);
+    /* text-align: start; */
+    padding: 2px 4px ;
+    /* text-align: center; */
+}
+.gold-table thead th,
+.gold-table tbody th {
+    background-color: var(--bg03);
+}
+.wrap-gold-table {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background-color: var(--bg02);
+    overflow: hidden;
+}
+.gold-table-footer th,
+.gold-table-footer td  {
+    background-color: rgba(129, 201, 129, 0.299);
+    font-weight: 550;
+}
+.num-center {
+ text-align: center;
+}
+.num-right {
+    text-align: end;
+}
+.green-text {
+    text-align: center;
+    color: var(--green-text);
+}
+.red-text {
+    text-align: center;
+    color: var(--red-text);
+}
+.icon {
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-left: solid 6px transparent;
+    border-right: solid 6px transparent;
+    margin-right: 4px;
+}
+.up {
+    border-bottom: var(--green-text) solid 10px;
+}
+.down {
+    border-top: var(--red-text) solid 10px;
+}
+/* .gold-table-footer-th {
+    background-color: #ffffff00;
+} */
+/* ------------------------------------------------------------------------------ */
+footer {
+    margin-top: 8px;
+    background-color: #222222;
+    color: white;
+
+    font-size: 0.6rem;
+    padding: 4px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #66ccff;
+}
+.card-margin {margin-top: 20px;}
+
+/* ------------------------------------------------------------------------------ */
+/* Responsive */
+/* ------------------------------------------------------------------------------ */
+/* Desktop Screen: 992px-1199 */
+
+/* Tablet Screen: 769-992 */
+@media (max-width: 992px) {
+    .site-header { background-color: yellow;}
+    .content-grid { 
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .form-row { grid-template-columns: 1fr;}
+    .form-checkbox-group {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .card-margin { margin: 0 20px;}
+    .header-inner {padding: 0 15px;}
+}
+/* Moblie Screen: 577-768 */
+@media (max-width: 768px) {
+    html {font-size: 14px;}
+    .site-header { background-color: green;}
+    .hero-grid {grid-template-columns: 1fr;}
+    .nav-menu {
+        flex-direction: column;
+        padding: 15px 40px;
+    }
+    .nav-menu li a {border-top: rgb(192, 192, 192) 1px solid;}
+    .gold-table {
+        white-space: nowrap;
+        display: block;
+        overflow-x: auto;
+    }
+    .header-inner {padding: 0 40px;}
+}
+/* Mobile Small Screen: 1-576*/
+@media (max-width: 576px) {
+    .site-header { background-color: pink;}
+    #hamburger-menu {
+    display: block;
+    width: 30px;
+    height: 25px;
+    position: relative;
+    margin-left: 40px;
+    z-index: 1000;
+    cursor: pointer;
+    }
+    #hamburger-menu span,
+    #hamburger-menu span::before,
+    #hamburger-menu span::after {
+        background-color: white;
+        height: 3px;
+        width: 100%;
+        display: block;
+        position: absolute;
+        content: "";
+    }
+    /* จัดตำแหน่งเส้น */
+    #hamburger-menu span {top: 11px;}
+    #hamburger-menu span::before {top: -8px;}
+    #hamburger-menu span::after {top: 8px;}
+    /* เส้นกากบาท */
+    #hamburger-menu.close span {
+        background: transparent;
+    }
+    #hamburger-menu.close span::before {
+        transform:rotate(45deg); 
+        top: 0;
+    }
+    #hamburger-menu.close span::after {
+        transform:rotate(-45deg); 
+        top: 0;
+    }
+    /* Disable Menu */
+    #menu {
+        display: none;
+        flex-direction: column;
+    }
+    #menu.overlay {
+        display: flex;
+    }
+
+    .sidebar {
+    display: flex;
+    flex-direction: column;
+}
+    /* สลับตำแหน่ง ITEM */
+    .order-box-image {order: 3;}
+    .order-box-table {order: 1;}
+    .order-box-form {order: 2;}
+    /* สลับตำแหน่ง Widget */
+    .order-w-intro {order: -5;}
+    .order-w-form-green {order: -1;}
+    .order-w-form-purple {order: -2;}
+    .order-w-facebook {order: -4;}
+    .order-w-suport {order: -3;}
+}
+/* GoodLuck !! */
+

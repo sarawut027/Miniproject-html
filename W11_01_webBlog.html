@@ -1,0 +1,513 @@
+<!--
+      สอนการใช้ google fonts
+      การสร้างตาราง
+      การสร้างฟอร์ม
+      การจัดวางเลย์เอาต์ด้วย CSS Grid และ Flexbox
+      responsive design เบื้องต้น
+    -->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sarawut's Blog</title>
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap");
+  </style>
+  <header class="site-header">
+    <div class="wrapper">
+      <div class="header-inner">
+        <div>
+          <h3 class="site-title">Sarawut's Blog</h3>
+          <p class="site-subtitle">รวมเนื้อหาเกี่ยวกับเทคโนโลยี AI น่าสนใจ</p>
+        </div>
+        <div class="social-icons">
+          <a href="">f</a>
+          <a href="">t</a>
+          <a href="">in</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="main-nav">
+    <div class="wrapper">
+      <div id="hamburger-menu">
+        <span></span>
+      </div>
+      <div id="menu">
+        <ul class="nav-menu">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#" class="active">AI Technology</a></li>
+          <li><a href="#" class="active">Machine Learning</a></li>
+          <li><a href="#" class="active">Deep Learning</a></li>
+          <li><a href="#" class="active">AI Tools</a></li>
+          <li><a href="#contact" class="active">AI News</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero-content">
+    <div class="wrapper">
+
+      <h2 class="hero-title">🚀 เนื้อหาแนะนำสำหรับคุณ</h2>
+      <div class="hero-grid">
+        <div class="hero-item">
+          <h3 class="hero-item-title">💡 เทคนิค CSS Grid ที่ทุกคนควรรู้</h3>
+          <p>
+            เรียนรู้วิธีใช้ CSS Grid Layout
+            เพื่อสร้างเลย์เอาต์ที่ซับซ้อนและยืดหยุ่น
+            พร้อมตัวอย่างการใช้งานจริง
+            และเทคนิคขั้นสูงที่จะทำให้เว็บไซต์ของคุณโดดเด่น
+          </p>
+          <a href="" class="readmore">อ่านเพิ่มเติม</a>
+        </div>
+
+        <div class="hero-item">
+          <h3 class="hero-item-title">🎨 การออกแบบ UI/UX ที่ใช้งานง่าย</h3>
+          <p>
+            หลักการออกแบบส่วนติดต่อผู้ใช้ที่ดี
+            เริ่มตั้งแต่การเลือกสีที่เหมาะสม การจัดวาง Typography
+            และการสร้างประสบการณ์ผู้ใช้ที่น่าประทับใจ
+          </p>
+          <a href="" class="readmore">เรียนรู้เพิ่ม</a>
+        </div>
+
+        <div class="hero-item">
+          <h3 class="hero-item-title">⚡ การปรับปรุงประสิทธิภาพเว็บไซต์</h3>
+          <p>
+            เทคนิคการทำให้เว็บไซต์โหลดเร็วขึ้น ตั้งแต่การ optimize รูปภาพ
+            การใช้ CDN การ minify code
+            และการวัดผลประสิทธิภาพด้วยเครื่องมือต่างๆ
+          </p>
+          <a href="" class="readmore">ดูรายละเอียด</a>
+        </div>
+
+        <div class="hero-item">
+          <h3 class="hero-item-title">🔥 JavaScript ES6+ ที่ควรรู้</h3>
+          <p>
+            ฟีเจอร์ใหม่ๆ ของ JavaScript
+            ที่จะทำให้การเขียนโค้ดของคุณทันสมัยและมีประสิทธิภาพมากขึ้น เช่น
+            Arrow Functions, Async/Await, Destructuring และอื่นๆ
+          </p>
+          <a href="" class="readmore">เริ่มเรียน</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+
+  <div class="page">
+    <div class="wrapper">
+      <div class="content-grid">
+        <!-- Left Side -->
+        <main class="post-list">
+          <!-- Card 1 = Image -->
+          <div class="card order-box-image">
+            <p class="post-headline">
+              CATEGORY ARCHIVES:<b> RESPONSIVE DESIGN</b>
+            </p>
+
+            <div class="post-header">
+              <h3>คำสั่ง CSS สำคัญสำหรับการเขียนเว็บ Responsive</h3>
+              <div class="date-circle">
+                <span class="day">30</span>
+                <span>AUG</span>
+              </div>
+            </div>
+            <div class="post-image">
+              <img src="https://getwallpapers.com/wallpaper/full/a/9/7/335426.jpg" alt="phto">
+            </div>
+            <p class="post-description">
+              ภาพตัวอย่างการแสดงผล responsive บนอุปกรณ์ต่างๆ
+              รวมคำสั่ง CSS ที่จำเป็นสำหรับการสร้างเว็บไซต์ที่รองรับทุกขนาดหน้าจอ เริ่มจาก media queries, flexbox, grid
+              layout และเทคนิคการใช้ viewport units เพื่อให้เว็บของคุณดูดีในทุกอุปกรณ์ …
+            </p>
+            <span>|</span> <a href="">read more</a>
+
+            <div class="post-footer">
+              <span>Tags:</span>
+              <a href="">responsive design </a><span>•</span>
+              <a href="">media queries </a><span>•</span>
+              <a href="">flexbox </a><span>•</span>
+              <a href="">CSS grid</a>
+
+            </div>
+          </div>
+
+          <!-- Card 2 = Table -->
+          <div class="card order-box-table">
+            <p class="post-headline">
+              CATEGORY ARCHIVES: <b>CSS DISPLAY PROPERTY</b>
+            </p>
+
+            <div class="post-header">
+              <h3>เปรียบเทียบ display: block vs inline-block</h3>
+              <div class="date-circle">
+                <span class="day">28</span>
+                <span>AUG</span>
+              </div>
+            </div>
+            <p class="post-description">
+              ตารางด้านล่างแสดงความแตกต่างระหว่าง display: block และ display: inline-block เพื่อช่วยให้เข้าใจการเลือกใช้
+              display property ที่เหมาะสม
+            </p>
+
+            <table class="comparison-tb">
+              <thead>
+                <tr>
+                  <th style="width: 25%;">คุณสมบัติ</th>
+                  <th style="width: 37.5%;">display: block</th>
+                  <th style="width: 37.5%;">display: inline-block</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="feature">การจัดเรียงองค์ประกอบ</td>
+                  <td class="text-gray">📦 แต่ละตัวอยู่บรรทัดใหม่</td>
+                  <td class="text-green">✅ เรียงต่อกันในบรรทัดเดียว</td>
+                </tr>
+                <tr>
+                  <td class="feature">ความกว้างเริ่มต้น</td>
+                  <td class="text-red">❌ กินพื้นที่เต็มความกว้าง (100%)</td>
+                  <td class="text-green">✅ ตามเนื้อหาภายใน (auto)</td>
+                </tr>
+                <tr>
+                  <td class="feature">การกำหนด width และ height</td>
+                  <td class="text-green">✅ กำหนดได้ทั้ง width และ height</td>
+                  <td class="text-green">✅ กำหนดได้ทั้ง width และ height</td>
+                </tr>
+                <tr>
+                  <td class="feature">margin และ padding</td>
+                  <td class="text-green">✅ ใช้ได้ครบทุกทิศทาง</td>
+                  <td class="text-green">✅ ใช้ได้ครบทุกทิศทาง</td>
+                </tr>
+                <tr>
+                  <td class="feature">vertical-align</td>
+                  <td class="text-red">❌ ไม่มีผลกับ block element</td>
+                  <td class="text-green">✅ สามารถใช้ได้ (top, middle, bottom)</td>
+                </tr>
+                <tr>
+                  <td class="feature">ช่องว่างระหว่างองค์ประกอบ</td>
+                  <td class="text-red">🚫 ไม่มีปัญหาช่องว่าง</td>
+                  <td class="text-red">❌ มีช่องว่างจาก whitespace ใน HTML</td>
+                </tr>
+                <tr>
+                  <td class="feature">การใช้งานที่เหมาะสม</td>
+                  <td class="text-gray">📄 div, section, header, footer</td>
+                  <td class="text-green">🎯 navigation menu, button groups</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="post-description">
+              สรุป: display: block เหมาะสำหรับโครงสร้างหลักของหน้าเว็บ ส่วน display: inline-block
+              เหมาะสำหรับการสร้างเมนู หรือองค์ประกอบที่ต้องเรียงต่อกัน
+            </p>
+
+            <div class="post-footer">
+              <span>Tags: </span>
+              <a href="">CSS</a><span>•</span>
+              <a href="">display property</a>
+            </div>
+          </div>
+
+          <!-- Card 3 = Form -->
+          <div class="card order-box-form" id="contact">
+            <h2 style="text-align: center;">📞 ติดต่อเรา</h2>
+            <!-- Form -->
+            <div class="contact-form-main-card">
+              <form action="" method="">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="fname" class="form-label">ชื่อ</label>
+                    <input class="form-input" type="text" id="fname" name="fname" placeholder="กรอกชื่อ">
+                  </div>
+                  <div class="form-group">
+                    <label for="lname" class="form-label">นามสกุล</label>
+                    <input class="form-input" type="text" id="lname" name="lname" placeholder="กรอกนามสกุล">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="email" class="form-label">อีเมล</label>
+                    <input class="form-input" type="email" id="email" name="email" placeholder="กรอกอีเมล">
+                  </div>
+                  <div class="form-group">
+                    <label for="phone" class="form-label">เบอร์โทรศัพท์</label>
+                    <input class="form-input" type="tel" id="phone" name="phone" placeholder="66+">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="company" class="form-label">บริษัท/องค์กร</label>
+                  <input class="form-input" type="text" id="company" name="company" placeholder="กรอกชื่อบริษัท/องค์กร">
+                </div>
+                <!-- Select -->
+                <div class="form-group">
+                  <label for="topic" class="form-label">หัวข้อที่สนใจ</label>
+                  <select name="topic" id="topic" class="form-select">
+                    <option value="Web development">Web development</option>
+                    <option value="Moblie development">Moblie development</option>
+                    <option value="UX/UI design">UX/UI design</option>
+                    <option value="AI">AI</option>
+                  </select>
+                </div>
+                <!-- Textarea -->
+                <div class="form-group">
+                  <label for="details" class="form-label">รายละเอียด</label>
+                  <textarea name="details" id="details" placeholder="กรอกรายละเอียด" class="form-text-area"></textarea>
+                </div>
+                <!-- Checkbox -->
+                <div class="form-group">
+                  <label class="form-label">ความสนใจเพิ่มเติม</label>
+                  <div class="form-checkbox-group">
+                    <div class="checkbox-item">
+                      <input type="checkbox" name="interests[]" value="newsletter">
+                      <span>ต้องการรับข่าวสารทาง email</span>
+                    </div>
+                    <div class="checkbox-item">
+                      <input type="checkbox" name="interests[]" value="consult">
+                      <span>สนใจบริการปรึกษา</span>
+                    </div>
+                    <div class="checkbox-item">
+                      <input type="checkbox" name="interests[]" value="partnership">
+                      <span>สนใจความร่วมมือ</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <input type="submit" value="ส่งข้อความ" onclick="alert('ส่งข้อความสำเร็จ!')"> -->
+                <div class="btn-group">
+                  <button type="submit" onclick="alert('ส่งข้อความสำเร็จ!')" class="form-button submit-btn">📨
+                    ส่งข้อความ</button>
+                  <button type="reset" onclick="alert('ล้างข้อมูลสำเร็จ!')" class="form-button reset-btn">🗑️
+                    ล้างข้อมูล</button>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </main>
+        <!-- Right Side -->
+        <aside class="sidebar">
+          <!-- Widget 01 -->
+          <div class="widget order-w-intro">
+            <div class="widget-title">สวัสดีครับ ยินดีต้อนรับ</div>
+            <p class="post-description">
+              ผมชื่อ Sarawut เขียนบล็อกเกี่ยวกับ Startup การตลาด การเขียนโปรแกรม และเทคโนโลยี AI สำหรับ SME และ Startup
+            </p>
+            <div class="auther-photo">รูปผู้เขียน</div>
+            <a href="" class="btn-facebook">กดติดตามใน Facebook</a>
+
+          </div>
+
+          <!-- Widget 02 -->
+          <div class="widget order-w-form-green">
+            <div class="widget-02">
+              <h3 style="text-align: center; color: #fff; margin-bottom: 8px;">📧 รับข่าวสารใหม่</h3>
+              <div class="widget-input">
+                <label for="name">ชื่อของคุณ</label>
+                <input class="widget-input" type="text" id="name" name="name" placeholder="ใส่ชื่อของคุณ">
+              </div>
+              <div class="widget-input">
+                <label for="email">อีเมล</label>
+                <input class="widget-input" type="text" id="email" name="email" placeholder="ใส่อีเมลของคุณ">
+              </div>
+              <div class="widget-input">
+                <label for="topic">สนใจเนื้อหาด้านไหน </label>
+                <select name="topic" id="topic" class="form-select">
+                  <option value="Web development">Web development</option>
+                  <option value="Moblie development">Moblie development</option>
+                  <option value="UX/UI design">UX/UI design</option>
+                  <option value="AI">AI</option>
+                </select>
+              </div>
+              <button class="widget-button" onclick="alert('สมัครสำเร็จ!')">🚀 สมัครเลย!</button>
+            </div>
+          </div>
+
+          <!-- Widget 03 -->
+          <div class="widget order-w-form-purple">
+            <div class="widget-03">
+              <h3 style="text-align: center; color: #fff; margin-bottom: 8px;">💬 ติดต่อด่วน</h3>
+              <div class="widget-input">
+                <label for="name">ชื่อ</label>
+                <input class="widget-input" type="text" id="name" name="name" placeholder="ใส่ชื่อของคุณ">
+              </div>
+              <div class="widget-input">
+                <label for="topic">เรื่องที่ต้องการติดต่อ</label>
+                <select name="topic" id="topic" class="form-select">
+                  <option value="ความร่วมมือ">ความร่วมมือ</option>
+                  <option value="ปรึกษา">ปรึกษา</option>
+                  <option value="ปรึกษาโปรเจ็กต์">ปรึกษาโปรเจ็กต์</option>
+                  <option value="ให้ความคิดเห็น">ให้ความคิดเห็น</option>
+                  <option value="อื่นๆ">อื่นๆ</option>
+                </select>
+              </div>
+              <div class="widget-input">
+                <label for="message">ข้อความสั้นๆ</label>
+                <textarea name="message" id="message" placeholder="ใส่ข้อความสั้นๆ" class="form-text-area"></textarea>
+              </div>
+              <button class="widget-button" onclick="alert('ส่งข้อความสำเร็จ!')">📤 ส่งเลย</button>
+            </div>
+          </div>
+
+          <!-- Widget 04 -->
+          <div class="widget order-w-facebook">
+            <div class="widget-title">
+              Facebook Like
+            </div>
+            <div class="auther-photo">
+              กล่อง Facebook Like (ตัวอย่าง)
+              203,779 คนถูกใจ
+            </div>
+          </div>
+
+
+          <!-- Widget 05 -->
+          <div class="widget order-w-suport">
+            <div class="widget-title">Sponsor</div>
+            <div class="auther-photo">พื้นที่โฆษณา / วิดีโอ</div>
+          </div>
+        </aside>
+
+      </div>
+      <!-- ------------------------------------------------------------------------------- -->
+      <!-- table ราคาทอง -->
+      <div class="card card-margin">
+        <p class="post-headline">
+          CATEGORY ARCHIVES:<b> RESPONSIVE DESIGN</b>
+        </p>
+
+        <div class="post-header">
+          <h3>ตารางสรุปราคาทองรายเดือนต่ำสุด-สูงสุดตั้งแต่ปี 2568-2569</h3>
+          <div class="date-circle">
+            <span class="day">2</span>
+            <span>MAR</span>
+          </div>
+        </div>
+        <p class="post-description">
+          สรุปข้อมูลราคาทองคําแท่งในประเทศชนิด 96.5% เริ่มตั้งแต่ปี 2549 ถึงปีปัจจุบัน 2568 โดยเป็นการแสดงราคาต่ำสุด
+          ราคาสูงสุดของทุกๆ เดือน รวมถึง ราคารวมที่ปรับเพิ่มขึ้นหรือลดลงในแต่ละเดือน และสรุปราคารวม สูงสุด ต่ำสุด
+          ประจำปี
+        </p>
+        <!-- เริ่มสร้างตาราง ราคาทอง -->
+        <div class="wrap-gold-table">
+          <table class="gold-table">
+            <thead>
+              <tr>
+                <th rowspan="2">เดือน ปี</th>
+                <th colspan="3">2569</th>
+                <th colspan="3">2568</th>
+              </tr>
+              <tr>
+                <th class="num-center">ขึ้น/ลง</th>
+                <th class="num-center">ต่ำสุด</th>
+                <th class="num-center">สูงสุด</th>
+                <th class="num-center">ขึ้น/ลง</th>
+                <th class="num-center">ต่ำสุด</th>
+                <th class="num-center">สูงสุด</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="num-center">เม.ย.</th>
+                <td class="num-right">-</td>
+                <td class="num-right">-</td>
+                <td class="num-right">-</td>
+                <td class="red-text"> <span class="icon down"></span>-1,950</td>
+                <td class="num-right">49,100</td>
+                <td class="num-right">54,800</td>
+              </tr>
+              <tr>
+                <th class="num-center">มี.ค.</th>
+                <td class="red-text"> <span class="icon down"></span>-1,700</td>
+                <td class="num-right">78,750</td>
+                <td class="num-right">79,050</td>
+                <td class="green-text"> <span class="icon up"></span>+3,750</td>
+                <td class="num-right">46,350</td>
+                <td class="num-right">50,100</td>
+              </tr>
+              <tr>
+                <th class="num-center">ก.พ.</th>
+                <td class="green-text"> <span class="icon up"></span>+3,400</td>
+                <td class="num-right">68,200</td>
+                <td class="num-right">77,600</td>
+                <td class="red-text"> <span class="icon down"></span>-1,850</td>
+                <td class="num-right">44,600</td>
+                <td class="num-right">47,450</td>
+              </tr>
+              <tr>
+                <th class="num-center">ม.ค.</th>
+                <td class="green-text"> <span class="icon up"></span>+9,250</td>
+                <td class="num-right">64,550</td>
+                <td class="num-right">81,950</td>
+                <td class="green-text"> <span class="icon up"></span>+2,050</td>
+                <td class="num-right">42,550</td>
+                <td class="num-right">44,850</td>
+              </tr>
+              <tr class="gold-table-footer">
+                <th style="background-color: rgb(129, 201, 129, 0.299);">ทั้งปี</th>
+                <td class="green-text"> <span class="icon up"></span>+14,350</td>
+                <td class="num-right">64,550</td>
+                <td class="num-right">81,950</td>
+                <td class="green-text"> <span class="icon up"></span>+22,550</td>
+                <td class="num-right">42,550</td>
+                <td class="num-right">67,400</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="post-footer">
+          <span>Tags:</span>
+          <a href="">responsive design </a><span>•</span>
+          <a href="">media queries </a><span>•</span>
+          <a href="">flexbox </a><span>•</span>
+          <a href="">CSS grid</a>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Sarawut — All rights reserved.</p>
+
+    <p>Designed for educational/demo purposes • <a href="">Contact</a></p>
+  </footer>
+   <script>
+        var burgerMenu = document.getElementById('hamburger-menu');
+        var overlay = document.getElementById('menu');
+
+        burgerMenu.addEventListener('click', function () {
+            this.classList.toggle("close");
+            overlay.classList.toggle("overlay");
+        });
+
+        // ปิดเมนูเมื่อกดลิงก์
+        var menuLinks = document.querySelectorAll('#menu a');
+
+        menuLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                burgerMenu.classList.remove("close");
+                overlay.classList.remove("overlay");
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>
+<!-- Good Luck!! -->

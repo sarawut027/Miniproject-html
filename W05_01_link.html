@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link</title>
+</head>
+<style>
+    body {
+        background-color: #FEE2AD;
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.7;
+    }
+
+    .container {
+        width: 60%;
+        margin: auto;
+        border-radius: 15px;
+    }
+
+    .card {
+        background-color: #F9F8F6;
+        padding: 20px 30px;
+        margin: 20px 0;
+        border-radius: 15px;
+        border-top: 4px solid #F08787;
+
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 32px;
+        color: #F08787;
+    }
+
+    .subtitle {
+        text-align: center;
+        font-size: 18px;
+        color: rgb(39, 38, 38);
+    }
+
+    code {
+        background-color: rgb(212, 204, 204);
+        padding: 4px;
+        border-radius: 5px;
+    }
+
+    pre {
+        background-color: rgb(212, 204, 204);
+        border-left: 4px solid #D25353;
+        border-radius: 5px;
+        padding: 15px;
+    }
+
+    .acard {
+        text-decoration: none;
+    }
+
+    .Atext {
+        background-color: #D25353;
+        color: white;
+        padding: 7px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .credit {
+        color: #ffff;
+        padding: 15px;
+    }
+</style>
+
+<body>
+    <h1></h1>
+    <div class="container">
+        <header>
+            <h1>Workshop: Various Links</h1>
+            <p class="subtitle">เรียนรู้ลิงก์หลายรูปแบบ พร้อมตัวอย่างและแบบฝึกหัด</p>
+        </header>
+        <!-- Section1 -->
+        <div class="card">
+            <h2>1. External Links</h2>
+            <div>
+                <a href="" class="acard"><b>Visit Wikipedia</b></a>
+                <p><code>target="_blank"</code>เปิดลิงค์ในแท็ปใหม่</p>
+            </div>
+            <div>
+                <a href="" class="acard"><b>Visit Google</b></a>
+                <p><code>target="_self"</code>เปิดลิงค์ในหน้าเดิม</p>
+            </div>
+        </div>
+        <!-- Section2 -->
+        <div class="card modul2">
+            <h2>2. Internal Links & Anchor Links</h2>
+            <pre>&lt;a href="about.html"&gt;About Us&lt;/a&gt;
+&lt;a href="#jump"&gt;Jump to Section&lt;/a&gt;
+&lt;h3 id="jump"&gt;This is the jump target&lt;/h3&gt;</pre>
+            <a href="#jump">Click to jump!</a>
+            <p><b>This is the jump target</b></p>
+        </div>
+        <!-- Section3 -->
+        <div class="card modul3">
+            <h2>3. Email Links</h2>
+            <pre>&lt;a href="mailto:student@example.com?subject=Hello"&gt;
+Send an Email
+&lt;/a&gt;</pre>
+            <a href="">send an Email!</a>
+        </div>
+        <!-- Section4 -->
+        <div class="card modul4">
+            <h2>4. Dowload Link</h2>
+            <pre>&lt;a href="files/sample.txt" download&gt;Download File&lt;/a&gt;</pre>
+            <a href="" class="Atext"><b>Dowload Text files</b></a>
+        </div>
+        <!-- Section5 -->
+        <div class="card modul5">
+            <h2>5. Button Links</h2>
+            <p>ลิงค์ที่ออกแบบคล้ายปุ่มเหมาะกับ ปุ่มสมัคร ปุ่มอ่านเพิ่มเติม หรือปุ่มนำทาง</p>
+            <pre>&lt;a href="https://www.example.com" class="btn-link"&gt;
+Visit Website
+&lt;/a&gt;</pre>
+            <p>สร้างปุ่มด้วยแท็ก <code>button</code></p>
+            <pre>&lt;button onclick="document.location='index.html'"&gt;HTML Tutorial&lt;/button&gt;
+- มักใช้เมื่อลิงก์ไป หน้าในเว็บเดียวกัน
+- ผูกกับ DOM (document) โดยตรง
+&lt;button onclick="location.href='https://www.example.com'"&gt;Visit Website&lt;/button&gt;
+- นิยมใช้มากกว่า
+- เหมาะทั้งลิงก์ ภายในและภายนอกเว็บ
+- ผูกกับ window โดยตรง</pre>
+            <button onclick="">HTML Tutorial</button>
+            <button onclick="">Visit Website</button>
+        </div>
+        <!-- Section6 -->
+        <div class="card modul6">
+            <h2>6. Image Links</h2>
+            <pre>&lt;a href="https://youtube.com"&gt;
+&lt;img src="images/sample.jpg" width="250"&gt;
+&lt;/a&gt;</pre>
+            <img src="image/sample.jpg" width="250">
+            <p>❗ หากต้องการใช้รูปของตนเองควรเก็บไว้ในโฟลเดอร์ เช่น image/sample.jpg</p>
+        </div>
+        <a href="index.html">Back To HTML Tutorial</a>
+    </div>
+    <p class="credit">&copy; 2025 HTML Tutorial by Sarawut Auiyahan </p>
+</body>
+
+</html>

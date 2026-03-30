@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test01</title>
+    
+</head>
+<body>
+    <style>
+        body {
+            font-family: sans-serif;
+             line-height: 1.5;
+            background-color: #464e54;
+
+            background-image: url(https://images.wallpapersden.com/image/download/guts-art-berserk-hd_bWlqZmeUmZqaraWkpJRnZ2VtrWZrZWU.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+
+            
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 900px;
+            margin: auto;
+        }
+        h1 {
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            font-weight: 600;
+            width: 100%;
+            height: fit-content;
+            padding: 20px 0;
+            background: linear-gradient(135deg,#9D5D5E,#9d5d5e75) ;
+        }   
+        /* card 1 */
+        .card1 {
+            margin: 40px 0;
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            list-style: none;
+            justify-content: center;
+        }
+        
+        li {
+            color: blue;
+            background-color: rgba(118, 118, 228, 0.381);
+            font-size: 16px;
+            padding: 10px 17px;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+        li:hover {
+            color: white;
+            background-color: orange;
+            transform: scale(1.2);
+        }
+        /* CARD 2 */
+        .card2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            gap: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+        }
+        .info {
+            background-color: #C78855;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+        .p-info2 {
+            font-weight: normal ;
+        }
+        h2 {
+            font-size: 32px;
+            color: white;
+            text-align: start;
+        }
+        .flex-p {
+            align-items: start;
+            display: flex;
+            gap: 20px;
+            margin:15px 0 ;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+        }
+        img {
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+            border: #464e54 solid 2px;
+        }
+        img:hover {
+             transform: scale(1.1);
+             filter: brightness(1.2);
+           
+        }
+       
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: rgba(255, 255, 255, 0.236);
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        /* card 3 */
+        .card3 {
+            gap: 20px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: repeat(3,1fr);
+             white-space: nowrap;
+             font-size: 24px;
+             font-weight: 550;
+             margin: 40px 0;
+        }
+        .p-card3 {
+           white-space: nowrap;
+           background-color: rgba(128, 155, 223, 0.922);
+           display: flex;
+           align-items: center;
+           justify-content: center;
+            padding: 5px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .p-card3:hover {
+            box-shadow: rgba(255, 255, 255, 0.649) 0px 2px 3px 1px;
+            transform: scale(1.2);
+        }
+       
+        .red {
+            color: red;
+            white-space: nowrap;
+            padding-left: 2px;
+        }
+        /* card 4 */
+        .card4 {
+            color: white;
+            font-size: 40px;
+
+            background-color: #9D5D5E;
+            text-align: center;
+            font-weight: 700;
+            padding: 15px 30px;
+            border-radius: 10px;
+
+            box-shadow: rgba(176, 123, 17, 0.848) 0px 4px 10px 3px;
+            margin: 40px 0;
+        }
+        /* footer */
+        footer {
+            text-align: center;
+            background-color: #464e54;
+            color: white;
+            width: 100%;
+            font-size: 16px;
+            padding: 10px;
+            margin-bottom: 0%;
+            margin-top: 100px;
+
+        }
+        
+
+    </style>
+    <!-- ---------------------------------------------------------------------------------------------------------------------- -->
+    <h1>📊 รายงานผลเกรด</h1>
+    <div class="container">
+        <!-- navbar -->
+        <div class="card1">
+            <ul>
+                <a href="#c1">
+                    <li>👲 ข้อมูลนักศึกษา</li>
+                </a>
+                <a href="#c2">
+                    <li>📊 ผลการเรียน</li>
+                </a>
+                <a href="#c3">
+                    <li>📞 ติดต่อ</li>
+                </a>
+            </ul>
+        </div>
+        <!-- Info -->
+        <div class="card2" id="c1">
+            <div class="info">
+                <h2>👲 Mr. Sarawut Auiyahan</h2>
+                <hr>
+                <div class="flex-p">
+                    <div class="info-p">
+                        <p class="p-info">📊รหัสนักศึกษา:</p>
+                        <p class="p-info">👤ชื่อ-นามสกุล:</p>
+                        <p class="p-info">🤖หมู่เรียน:</p>
+                        <p class="p-info">👲อาจารย์ที่ปรึกษา:</p>
+                        <p class="p-info">🛒Github:</p>
+                    </div>
+                    <div class="info-p">
+                        <p class="p-info2">674230027</p>
+                        <p class="p-info2">นาย สราวุฒิ อุยยาหาญ</p>
+                        <p class="p-info2">67/44</p>
+                        <p class="p-info2">อ.สุขสวัสดิ์ แซ่ลิ่ม</p>
+                        <a href="https://github.com/sarawut027/HTML" class="p-info2">https://github.com/sarawut027/HTML</a>
+                    </div>
+                </div>
+            </div>
+            <img src="https://img5.pic.in.th/file/secure-sv1/me14e41abe249439f8.jpg" alt="profile" width="220px">
+        </div>
+        <!-- grade -->
+        <div class="card3" id="c2">
+            <div class="p-card3">
+                <p>✨ปี 1 เทอม 1 : </p><p class="red"> 3.66</p>
+            </div>
+            <div class="p-card3">
+                <p>✨ปี 1 เทอม 2 : </p><p class="red"> 3.80</p>
+            </div>
+            <div class="p-card3">
+                <p>✨ปี 2 เทอม 1 : </p><p class="red"> 3.75</p>
+            </div>
+        </div>
+        <!-- sum grade -->
+         <div class="card4">
+            <p>💡เกรดเฉลี่ยสะสม: 3.75</p>
+         </div>
+
+    </div>
+        <footer id="c3">
+            <p>&copy; 2025 Webmaster by Sarawut Auiyahan ID 674230027 </p>
+        <br>
+            <p>Nakhon Pathom Rajabhat University</p>
+    </footer>
+</body>
+</html>

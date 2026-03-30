@@ -1,0 +1,239 @@
+/* Global CSS Styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Prompt";
+  line-height: 1.6;
+  background-color: #ff986a;
+  background-image: url("../image/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 200px;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 200px auto 40px;
+}
+
+/* Share Css */
+code {
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 1px;
+}
+
+pre {
+  background-color: rgb(212, 204, 204);
+  border-left: 4px solid #d25353;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.badge {
+  background-color: rgba(74, 107, 206, 0.393);
+  color: rgb(46, 28, 205);
+  font-size: 16px;
+  padding: 1px;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+.card {
+  background-color: #f9f8f6;
+  padding: 20px 30px;
+  margin: 20px 0;
+  border-radius: 15px;
+  border-top: 4px solid #f08787;
+}
+
+/* สีหัว card แยกตามข้อ */
+.card.module-1 {
+  border-top: solid #0074c2;
+}
+
+.card.module-2 {
+  border-top: solid #00a884;
+}
+
+.card.module-3 {
+  border-top: solid #ff9800;
+}
+
+.card.module-4 {
+  border-top: solid #8e24aa;
+}
+
+.card.module-5 {
+  border-top: solid #ff7043;
+}
+.note {
+  color: rgb(112, 112, 112);
+  border-left: solid #3b3b3b;
+  padding-left: 2px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* Group 1 : header Styles */
+header {
+  background-color: #f6f3c2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 5px 5px 10px gray;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.list-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.list-menu li {
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+.list-menu li:hover {
+  transform: translateY(-5px);
+}
+
+.list-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background: linear-gradient(135deg, rgb(212, 89, 89), red);
+  padding: 6px 12px;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgb(20, 15, 15);
+}
+.list-menu a:hover {
+  background: linear-gradient(135deg, rgb(234, 190, 190), rgb(218, 126, 126));
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #f08787;
+}
+
+/* Group2 */
+.img-small {
+  width: 100px;
+  height: 100px;
+}
+.position {
+  display: flex;
+  align-items: center;
+  border: 3px dashed #d25353;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 3px;
+}
+.position.left {
+  justify-content: flex-start;
+}
+.position.center {
+  justify-content: center;
+}
+.position.right {
+  justify-content: flex-end;
+}
+/* Group3 */
+.img-fixed {
+  width: 200px;
+  height: 160px;
+  object-fit: cover;
+  margin: 20px 0;
+}
+/* Group4 */
+.codesec3 {
+  background-color: rgb(147, 173, 136);
+  border-radius: 5px;
+  padding: 1px;
+}
+.obj-fit-image {
+  width: 800px;
+  height: 200px;
+  border: 1px solid black;
+}
+.obj-fit-image.contain {
+  object-fit: contain;
+}
+.obj-fit-image.fill {
+  object-fit: fill;
+}
+.obj-fit-image.cover {
+  object-fit: cover;
+}
+/* Group5 */
+.img-youtube img {
+  width: 200px;
+  height: auto;
+  transition: 0.3s;
+}
+.img-youtube img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px darkgrey;
+  transition: all 0.3s ease;
+}
+
+/* Group6 */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.gallery img {
+  height: 120px;
+  object-fit: cover;
+}
+/* Group7 */
+/* Group8 */
+figure {
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 5px;
+}
+/* Group9 */
+.bg-image {
+  background-image: url("../image/bg.png");
+  max-width: 100%;
+}
+/* Group10 */
+.back-link {
+            color: #ffff;
+            text-decoration: none;
+            text-align: center;
+            background-color: #FF5555;
+            padding: 10px;
+            border-radius: 15px;
+            /* display: inline-block; */
+            display: block;
+        }
+        .back-link:hover {
+            color:#FF5555 ;
+            text-decoration: underline;
+            background-color: #ffff;
+        }
