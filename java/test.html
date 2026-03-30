@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTAV</title>
+    <link rel="stylesheet" href="css/infogame.css">
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
+    .slider-container {
+            position: relative;
+            max-width: 800px;
+            width: 100%;
+            margin: 50px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .slides {
+            display: none; /* ซ่อนรูปทั้งหมดก่อน */
+        }
+
+        img {
+            width: 100%;
+            vertical-align: middle;
+            height: 450px;
+            object-fit: cover;
+        }
+
+        /* ปุ่มกด Next & Prev */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.3s;
+            user-select: none;
+            background: rgba(0,0,0,0.3);
+            border-radius: 0 3px 3px 0;
+            transform: translateY(-50%);
+        }
+
+        .next { right: 0; border-radius: 3px 0 0 3px; }
+        .prev:hover, .next:hover { background: rgba(0,0,0,0.8); }
+
+        /* ตัวเลขบอกลำดับรูป */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* เอฟเฟกต์ Fade ตอนเปลี่ยนรูป */
+        .fade {
+            animation: fadeAnim 1.5s;
+        }
+        @keyframes fadeAnim {
+            from { opacity: .4 } 
+            to { opacity: 1 }
+        }
+        
+    </style>
+        <!-- -------------------------------------------------------------------------------- -->
+    <header>
+        <a href="homepage.html"><img class="logo" src="image/LOGO-removebg-preview.png" alt="logo" width="100px" height="100px"></a>
+        <div class="nav-menu">
+            <h2><a href="Pc.html">PC</a></h2>
+            <h2><a href="play-station.html">Play Station</a></h2>
+            <h2><a href="xbox.html">Xbox</a></h2>
+        </div>
+       
+        <div class="icon">
+            <a href="#search">🔍</a>
+           <div class="icon">
+           <button onclick="openLogin()" class="login-btn">Login</button>
+</div>
+        </div>
+    </header>
+    <!-- -------------------------------------------------------------------------------- -->
+    <!-- Baner -->
+     <div class="hero-baner">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/271590/library_hero.jpg" alt="Hero-baner" height="400px" width="100%">
+     </div>
+     <!-- Main -->
+      <main>
+        <h2>Grand Theft Auto V</h2>
+        <div class="description-box">
+            <h4>Welcome to Los Santos</h4>
+            <div class="description">
+                <div class="a">
+                    <p>When a young street hustler, a retired bank robber, and a terrifying psychopath find themselves entangled with some of the most frightening and deranged elements of the criminal underworld, the U.S. government, and the entertainment industry, they must pull off a series of dangerous heists to survive in a ruthless city in which they can trust nobody — least of all each other.
+                    Current PC players can transfer both GTAV Story Mode progress and GTA Online characters and progression with a one-time migration from the legacy version of GTAV to GTAV Enhanced.</p>
+                </div>
+                <div class="potoleft">
+                     
+                <div class="slider-container">
+    <div class="slides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/8340fd391012e12be7e4c02e65801a2648a6b60e/ss_8340fd391012e12be7e4c02e65801a2648a6b60e.1920x1080.jpg?t=1765479644" alt="Image 1">
+    </div>
+
+    <div class="slides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/f4a6f63b4f7cb42262152449ba5e5c5837f20ff4/ss_f4a6f63b4f7cb42262152449ba5e5c5837f20ff4.1920x1080.jpg?t=1765479644" alt="Image 3">
+    </div>
+
+   <div class="slides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/f4a6f63b4f7cb42262152449ba5e5c5837f20ff4/ss_f4a6f63b4f7cb42262152449ba5e5c5837f20ff4.1920x1080.jpg?t=1765479644" alt="Image 3">
+    </div>
+     <div class="slides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/808b550269f898e227dae2c64b5e026f90da85f9/ss_808b550269f898e227dae2c64b5e026f90da85f9.1920x1080.jpg?t=1765479644" alt="Image 3">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------------------------------------------------------------------------------------- -->
+        <div class="button-group">
+            <div class="btn">
+                <img src="image/steam-bt.png" alt="steam">
+                <a href="https://store.steampowered.com/app/3240220/Grand_Theft_Auto_V_Enhanced/">STEAM</a>
+            </div>
+            <div class="btn">
+                <img src="image/play-bt.png" alt="play-station">
+                <a href="https://www.playstation.com/th-th/games/grand-theft-auto-v/">PLAY-STATION</a>
+            </div>
+             <div class="btn-trailer">
+                <img src="image/youtube-bt.png" alt="Trailer">
+                <a href="https://www.youtube.com/watch?v=QkkoHAzjnUs&pp=ygUNZ3RhIHYgdHJhaWxlcg%3D%3D">Trailer!</a>
+            </div>
+            <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // ฟังก์ชันเลื่อนไปข้างหน้า/ถอยหลัง
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slides");
+        
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        
+        slides[slideIndex-1].style.display = "block";  
+    }
+</script>
+        </div>
+      </main>
+</body>
+<!-- LOGIN MODAL -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeLogin()">&times;</span>
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+  </div>
+</div>
+</html>

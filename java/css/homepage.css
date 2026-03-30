@@ -19,7 +19,7 @@ body {
 header {
   width: 100%;
   height: 100px;
-  background: linear-gradient(135deg, #121212 , #0079f25f) ;
+  background: linear-gradient(135deg, #121212 , #0079f267) ;
   /* margin-top: 16px; */
 
   display: flex;
@@ -201,8 +201,122 @@ border-bottom: 1px solid #0078F2 ;
 .profile-icon:hover {
   color: #00bfff;
 }
+/*footer*/
+            .site-footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 40px 10%;
+            border-top: 1px solid #444;
+        }
 
-/* footer */
+        .footer-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding-bottom: 30px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .feature-item i {
+            font-size: 24px;
+            color: #ccc;
+        }
+
+        .feature-text h3 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .feature-text p {
+            margin: 0;
+            font-size: 12px;
+            color: #aaa;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #555;
+            margin: 20px 0;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            transition: transform 0.2s;
+        }
+
+        .fb { background-color: #1877F2; }
+        .yt { background-color: #FF0000; }
+        .dc { background-color: #5865F2; }
+
+        .email-section {
+            text-align: right;
+        }
+
+        .email-section span {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .email-section p {
+            margin: 0;
+            font-size: 13px;
+            color: #bbb;
+        }
+
+        
+            .email-section { 
+                text-align: center; 
+            }
+        
+
+        @media (min-width: 1024px) {
+            .site-footer {
+                padding: 50px 15%;  
+            }
+
+            .footer-features {
+                gap: 40px;  
+            }
+
+            .feature-item i {
+                font-size: 30px; 
+            }
+
+            .social-btn:hover { 
+                transform: scale(1.2); 
+                box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); 
+            }
+        }
+        /* footer */
 .site-footer {
     background-color: #333;
     color: #fff;
@@ -210,12 +324,14 @@ border-bottom: 1px solid #0078F2 ;
     border-top: 1px solid #444;
 }
 
+
 .footer-features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     padding-bottom: 30px;
 }
+
 
 .feature-item {
     display: flex;
@@ -247,6 +363,7 @@ hr {
     margin: 20px 0;
 }
 
+
 .footer-bottom {
     display: flex;
     justify-content: space-between;
@@ -272,10 +389,9 @@ hr {
     transition: 0.3s;
 }
 
-/* สี */
-.fb { background-color: #1877F2; }
-.yt { background-color: #FF0000; }
-.dc { background-color: #5865F2; }
+
+
+
 
 .social-btn:hover {
     transform: scale(1.2);
@@ -298,7 +414,6 @@ hr {
     font-size: 13px;
     color: #bbb;
 }
-
 
 @media (max-width: 768px) {
     .email-section {

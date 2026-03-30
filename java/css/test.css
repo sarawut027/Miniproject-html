@@ -1,0 +1,139 @@
+/* ตั้งค่าพื้นฐาน */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a; /* สีพื้นหลังเข้ม */
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Hero Banner */
+.hero-banner {
+    width: 90%;
+    height: 350px;
+    background-color: #eee; /* สีเทาอ่อนแทนตารางหมากรุก */
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Game Content */
+.game-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.description-box {
+    background-color: #2a2a2a; /* กล่องสีเทาเข้ม */
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #888;
+}
+
+/* ปุ่มกด */
+.button-group {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+
+.btn.steam { background-color: #333; }
+.btn.trailer { background-color: #444; }
+/* Footer */
+/* ส่วนล่าง: Social & Email */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: transform 0.2s;
+}
+
+.social-btn:hover {
+    transform: scale(1.1);
+}
+
+.fb { background-color: #1877F2; }
+.yt { background-color: #FF0000; }
+.dc { background-color: #5865F2; }
+
+.email-section {
+    text-align: right;
+}
+
+.email-section span {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.email-section p {
+    margin: 0;
+    font-size: 13px;
+    color: #bbb;
+}
+
+/* ปรับแต่งสำหรับมือถือ */
+@media (max-width: 600px) {
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    .email-section {
+        text-align: center;
+    }
+}

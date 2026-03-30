@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    height: 100vh;
+
+    background-image: url("https://scontent.fbkk29-6.fna.fbcdn.net/v/t1.15752-9/658950473_818237321345711_6780929873914401900_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeH-dxOpZmK2wDIMnX6VZUqpvIBRSRGRSxW8gFFJEZFLFZ6ibQhEE7ZMI9EOvp7DvUi-rXPew2vUG-8gbcmwukEV&_nc_ohc=Wt1QYep4M54Q7kNvwEGmI2F&_nc_oc=AdphwRLT4ocy8fT1qlY1IqI5zx92xsWi7cYEHkmJ7KmQfqhra7bx6y27t__DQRM6SHQHufUfiWZVu4a7Gk8icAx9&_nc_zt=23&_nc_ht=scontent.fbkk29-6.fna&_nc_ss=7a3a8&oh=03_Q7cD4wGHWcuypxGbxN4oI7aDrZnBg1wAZLmh9K_e_l79CAV-WQ&oe=69F0F4E2"); /* ใส่ลิงก์รูป */
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.login-box{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:#e5e5e5;
+    padding:30px;
+    border-radius:10px;
+    width:300px;
+    text-align:center;
+}
+
+
+.login-box input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+}
+
+.login-box button{
+    width:100%;
+    padding:12px;
+    background:#333;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.login-box button:hover{
+    background:#555;
+}
